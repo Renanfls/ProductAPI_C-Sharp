@@ -23,10 +23,14 @@ public class ProductController : ControllerBase
 
   // Read
   [HttpGet]
-  public IEnumerable<Product> ListProducts()
+  public IEnumerable<Product> ListProducts([FromQuery] int skip,[FromQuery] int take)
   {
-    return products;
+    return products.Skip(skip).Take(take);
   }
 
-
+  [HttpGet("{id}")]
+  public Product? ListProductById(int id)
+  {
+    return products.FirstOrDefault(product => product.Id == id);
+  }
 }

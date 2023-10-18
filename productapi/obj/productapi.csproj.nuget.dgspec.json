@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dpti\\Documents\\ProductAPI_C-Sharp\\productapi\\productapi.csproj": {}
+    "F:\\_Programacao\\_Alura\\_C-Sharp\\ProductAPI_C-Sharp\\productapi\\productapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dpti\\Documents\\ProductAPI_C-Sharp\\productapi\\productapi.csproj": {
+    "F:\\_Programacao\\_Alura\\_C-Sharp\\ProductAPI_C-Sharp\\productapi\\productapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dpti\\Documents\\ProductAPI_C-Sharp\\productapi\\productapi.csproj",
+        "projectUniqueName": "F:\\_Programacao\\_Alura\\_C-Sharp\\ProductAPI_C-Sharp\\productapi\\productapi.csproj",
         "projectName": "productapi",
-        "projectPath": "C:\\Users\\Dpti\\Documents\\ProductAPI_C-Sharp\\productapi\\productapi.csproj",
-        "packagesPath": "C:\\Users\\Dpti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dpti\\Documents\\ProductAPI_C-Sharp\\productapi\\obj\\",
+        "projectPath": "F:\\_Programacao\\_Alura\\_C-Sharp\\ProductAPI_C-Sharp\\productapi\\productapi.csproj",
+        "packagesPath": "C:\\Users\\renan\\.nuget\\packages\\",
+        "outputPath": "F:\\_Programacao\\_Alura\\_C-Sharp\\ProductAPI_C-Sharp\\productapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dpti\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
