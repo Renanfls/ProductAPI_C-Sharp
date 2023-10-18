@@ -474,11 +474,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dpti\\Documents\\ProductAPI_C-Sharp\\src\\productapi\\productapi.csproj",
+      "projectUniqueName": "C:\\Users\\Dpti\\Documents\\ProductAPI_C-Sharp\\productapi\\productapi.csproj",
       "projectName": "productapi",
-      "projectPath": "C:\\Users\\Dpti\\Documents\\ProductAPI_C-Sharp\\src\\productapi\\productapi.csproj",
+      "projectPath": "C:\\Users\\Dpti\\Documents\\ProductAPI_C-Sharp\\productapi\\productapi.csproj",
       "packagesPath": "C:\\Users\\Dpti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dpti\\Documents\\ProductAPI_C-Sharp\\src\\productapi\\obj\\",
+      "outputPath": "C:\\Users\\Dpti\\Documents\\ProductAPI_C-Sharp\\productapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dpti\\AppData\\Roaming\\NuGet\\NuGet.Config"
