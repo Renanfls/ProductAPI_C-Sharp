@@ -4,6 +4,8 @@ namespace ProductsApi.Models;
 
 public class Product
 {
+  [Key]
+  [Required]
   public int Id { get; set; }
   [Required(ErrorMessage = "O nome do produto é obrigatório")]
   [MaxLength(30, ErrorMessage = "A marca não pode exceder 30 caracteres")]

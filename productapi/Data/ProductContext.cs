@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using ProductsApi.Models;
 
 namespace ProductsApi.Data;
 
@@ -8,4 +9,6 @@ public class ProductContext : DbContext
   {
     
   }
+
+  public DbSet<Product> Products { get; set; }
 }
