@@ -12,25 +12,29 @@ public class ProductController : ControllerBase
 
   // Create
   [HttpPost]
-  public void AddProduct([FromBody] Product product)
+  public IActionResult AddProduct([FromBody] Product product)
   {
     product.Id = id++;
     products.Add(product);
-    Console.WriteLine(product.Name);
-    Console.WriteLine(product.Mark);
-    Console.WriteLine(product.Quantity);
+    return CreatedAtAction(
+      nameof(ListProductById),
+      new { id = product.Id },
+      product
+    );
   }
 
   // Read
   [HttpGet]
-  public IEnumerable<Product> ListProducts([FromQuery] int skip,[FromQuery] int take)
+  public IEnumerable<Product> ListProducts([FromQuery] int skip = 0,[FromQuery] int take = 50)
   {
     return products.Skip(skip).Take(take);
   }
 
   [HttpGet("{id}")]
-  public Product? ListProductById(int id)
+  public IActionResult ListProductById(int id)
   {
-    return products.FirstOrDefault(product => product.Id == id);
+    var product = products.FirstOrDefault(product => product.Id == id);
+    if (product == null) return NotFound();
+    return Ok(product);
   }
 }
