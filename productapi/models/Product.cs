@@ -15,5 +15,5 @@ public class Product
   public string Mark { get; set; }
   [Required(ErrorMessage = "A quantidade do produto é obrigatória")]
   [Range(0, 100, ErrorMessage = "A quantidade deve ter entre 0 até 100")]
-  public int Quantity { get; set;} = 0;
+  public int Quantity { get; set; } = 0;
 }

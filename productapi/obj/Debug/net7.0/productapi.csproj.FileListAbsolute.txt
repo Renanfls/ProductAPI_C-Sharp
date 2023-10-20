@@ -97,3 +97,13 @@ F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\obj\Debug\net7.0\r
 F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\obj\Debug\net7.0\productapi.pdb
 F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\obj\Debug\net7.0\productapi.genruntimeconfig.cache
 F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\obj\Debug\net7.0\ref\productapi.dll
+C:\Users\Dpti\Documents\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Humanizer.dll
+C:\Users\Dpti\Documents\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Dpti\Documents\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Dpti\Documents\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Dpti\Documents\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Dpti\Documents\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Dpti\Documents\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Dpti\Documents\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\MySqlConnector.dll
+C:\Users\Dpti\Documents\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Dpti\Documents\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\System.CodeDom.dll

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using ProductsApi.Data;
 using ProductsApi.Models;
 
 namespace ProductsApi.Controllers;
@@ -7,15 +8,20 @@ namespace ProductsApi.Controllers;
 [Route("[controller]")]
 public class ProductController : ControllerBase
 {
-  private static List<Product> products = new();
-  private static int id = 0;
+
+  private ProductContext _context;
+
+  public ProductController(ProductContext context)
+  {
+    _context = context;
+  }
 
   // Create
   [HttpPost]
   public IActionResult AddProduct([FromBody] Product product)
   {
-    product.Id = id++;
-    products.Add(product);
+    _context.Products.Add(product);
+    _context.SaveChanges();
     return CreatedAtAction(
       nameof(ListProductById),
       new { id = product.Id },
@@ -27,13 +33,13 @@ public class ProductController : ControllerBase
   [HttpGet]
   public IEnumerable<Product> ListProducts([FromQuery] int skip = 0,[FromQuery] int take = 50)
   {
-    return products.Skip(skip).Take(take);
+    return _context.Products.Skip(skip).Take(take);
   }
 
   [HttpGet("{id}")]
   public IActionResult ListProductById(int id)
   {
-    var product = products.FirstOrDefault(product => product.Id == id);
+    var product = _context.Products.FirstOrDefault(product => product.Id == id);
     if (product == null) return NotFound();
     return Ok(product);
   }
