@@ -1,8 +1,8 @@
-
+using System.ComponentModel.DataAnnotations;
 
 namespace ProductApi.Data.Dtos;
 
-public class CreateProductDto
+public class UpdateProductDto
 {
   [Required(ErrorMessage = "O nome do produto é obrigatório")]
   [StringLength(30, ErrorMessage = "A marca não pode exceder 30 caracteres")]

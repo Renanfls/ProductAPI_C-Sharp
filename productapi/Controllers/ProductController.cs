@@ -1,5 +1,7 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using ProductApi.Data;
+using ProductApi.Data.Dtos;
 using ProductApi.Models;
 
 namespace ProductApi.Controllers;
@@ -10,10 +12,12 @@ public class ProductController : ControllerBase
 {
 
   private ProductContext _context;
+  private IMapper _mapper;
 
-  public ProductController(ProductContext context)
+  public ProductController(ProductContext context, IMapper mapper)
   {
     _context = context;
+    _mapper = mapper;
   }
 
   // Create
@@ -21,6 +25,7 @@ public class ProductController : ControllerBase
   public IActionResult AddProduct(
     [FromBody] CreateProductDto productDto)
   {
+    Product product = _mapper.Map<Product>(productDto);
     _context.Products.Add(product);
     _context.SaveChanges();
     return CreatedAtAction(
@@ -43,5 +48,15 @@ public class ProductController : ControllerBase
     var product = _context.Products.FirstOrDefault(product => product.Id == id);
     if (product == null) return NotFound();
     return Ok(product);
+  }
+
+  [HttpPut("{id}")]
+  public IActionResult UpdateProduct(int id, [FromBody] UpdateProductDto productDto)
+  {
+    var product = _context.Products.FirstOrDefault(product => product.Id == id);
+    if (product == null) return NotFound();
+    _mapper.Map(productDto, product);
+    _context.SaveChanges();
+    return NoContent();
   }
 }
