@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using ProductsApi.Data;
-using ProductsApi.Models;
+using ProductApi.Data;
+using ProductApi.Models;
 
-namespace ProductsApi.Controllers;
+namespace ProductApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]
@@ -18,7 +18,8 @@ public class ProductController : ControllerBase
 
   // Create
   [HttpPost]
-  public IActionResult AddProduct([FromBody] Product product)
+  public IActionResult AddProduct(
+    [FromBody] CreateProductDto productDto)
   {
     _context.Products.Add(product);
     _context.SaveChanges();
