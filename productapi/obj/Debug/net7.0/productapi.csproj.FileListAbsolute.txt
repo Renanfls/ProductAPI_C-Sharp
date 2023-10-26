@@ -117,3 +117,11 @@ F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\M
 F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\MySqlConnector.dll
 F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
 F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\System.CodeDom.dll
+F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\productapi.xml
+F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\AutoMapper.dll
+F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Newtonsoft.Json.dll
+F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+F:\_Programacao\_Alura\_C-Sharp\ProductAPI_C-Sharp\productapi\obj\Debug\net7.0\productapi.xml
