@@ -6,9 +6,9 @@
     <members>
         <member name="M:ProductApi.Controllers.ProductController.AddProduct(ProductApi.Data.Dtos.CreateProductDto)">
             <summary>
-            Adiciona um filme ao banco de dados
+            Adiciona um produto ao banco de dados
             </summary>
-            <param name="productDto">Objeto com os campos necessários para criação de um filme</param>
+            <param name="productDto">Objeto com os campos necessários para criação de um produto</param>
             <returns>IActionResult</returns>
             <response code="201">Caso inserção seja feita com sucesso</response>
         </member>
